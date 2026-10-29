@@ -340,17 +340,19 @@ with T("by Variable"):
         not_in = [u for u in results["uri"] if u not in st.session_state.cohort]
         st.button(f"➕ Add all {len(not_in)} matches to cohort", key="v_addall",
                   on_click=cohort_add, args=tuple(not_in), disabled=not not_in)
-        labels = {r.uri: f"{'✓ ' if r.uri in st.session_state.cohort else ''}{r.label}  ·  {r.study_name}"
-                  for r in results.itertuples()}
+        # Labels must not depend on the cohort: if a label changes between reruns (e.g. a ✓ that
+        # disappears on "Clear cohort"), the browser's selection no longer matches any option.
+        labels = {r.uri: f"{r.label}  ·  {r.study_name}" for r in results.itertuples()}
         selected = st.radio("Select a variable", results["uri"].tolist(), format_func=lambda u: labels.get(u, u),
                             key="v_pick") if len(results) else None
 
     with right:
         st.subheader("Variable detail")
-        if not selected:
-            st.info("No variable selected. Adjust the filters on the left.")
+        detail = get_variable_detail(selected) if selected else None
+        if detail is None or detail[0].empty:
+            st.info("No variable selected. Adjust the filters on the left, or pick one from the list.")
         else:
-            cde, datasets, values, onto, bundles, cdm = get_variable_detail(selected)
+            cde, datasets, values, onto, bundles, cdm = detail
             row = cde.iloc[0]
             h1, h2 = st.columns([5, 1])
             h1.markdown(f"### {row['label']}")
@@ -610,7 +612,7 @@ with T("About"):
    The schema mirrors dbGaP's study → dataset → variable structure (identical variables that
    share a name are merged into one slot that keeps all their `phv` ids), and LinkML can generate
    JSON Schema or Python data classes from it.
-2. **Two-level ontology mapping**, by text matching (annotation) against ontology:
+2. **Two-level ontology mapping**, by automatic text matching against ontology exports from BioPortal:
    - *Variable level* — variable names and descriptions matched to ontology terms.
    - *Value level* — categorical answers matched to terms of their own, e.g. an answer like
      `Never` matched to a VALUESETS term.
