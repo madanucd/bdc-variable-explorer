@@ -1,0 +1,7 @@
+# SQLite WAL-mode runtime files — regenerated automatically, not data
+*.db-wal
+*.db-shm
+.idea/
+.venv/
+__pycache__/
+.DS_Store

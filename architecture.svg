@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1370" viewBox="0 0 2000 1370">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7f8a8f"/></marker>
+<marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e07c66"/></marker>
+<marker id="ap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8e7cc3"/></marker>
+<marker id="at" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3f8a83"/></marker>
+</defs>
+<rect width="2000" height="1370" fill="#f9f9f9"/>
+<text x="110" y="88" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="34" font-weight="bold" font-style="normal" fill="#1c2733" text-anchor="start">BDC Variable Explorer Architecture</text>
+<text x="110" y="136" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="normal" font-style="italic" fill="#5a6a7a" text-anchor="start">3-Tier Structural Architecture with Cohort Selection &amp; Export Flow</text>
+<rect x="130" y="250" width="1222" height="257" rx="14" fill="#fce8e6" stroke="#e07c66" stroke-width="3"/>
+<text x="173" y="300" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" font-style="normal" fill="#1c2733" text-anchor="start">1. Study &amp; Dataset Layer</text>
+<text x="173" y="335" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#5a6a7a" text-anchor="start">(dbGaP studies and their pht data tables)</text>
+<rect x="216" y="361" width="457" height="110" rx="9" fill="#ffffff" stroke="#e07c66" stroke-width="2.2"/>
+<text x="444.5" y="400.8" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">BDC Studies</text>
+<text x="444.5" y="421.6" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">8 dbGaP studies</text>
+<text x="444.5" y="442.40000000000003" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">(part of LEOS)</text>
+<rect x="772" y="361" width="457" height="110" rx="9" fill="#ffffff" stroke="#e07c66" stroke-width="2.2"/>
+<text x="1000.5" y="411.20000000000005" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">dbGaP Datasets</text>
+<text x="1000.5" y="432.00000000000006" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">645 pht data tables</text>
+<text x="1338" y="300" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" fill="#e07c66" text-anchor="end">Study / dataset filters</text>
+<line x1="1352" y1="295" x2="1408" y2="295" stroke="#e07c66" stroke-width="4" marker-end="url(#ar)"/>
+<rect x="130" y="618" width="1222" height="257" rx="14" fill="#ede9f5" stroke="#8e7cc3" stroke-width="3"/>
+<text x="173" y="668" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" font-style="normal" fill="#1c2733" text-anchor="start">2. Metadata Layer</text>
+<text x="173" y="703" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#5a6a7a" text-anchor="start">(Variables, LinkML Schemas, Units &amp; Permissible Values)</text>
+<rect x="167" y="729" width="333" height="110" rx="9" fill="#ffffff" stroke="#8e7cc3" stroke-width="2.2"/>
+<text x="333.5" y="768.8000000000001" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">Variables</text>
+<text x="333.5" y="789.6" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">35,949 phv variables</text>
+<text x="333.5" y="810.4000000000001" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">(LinkML slots)</text>
+<rect x="574" y="729" width="333" height="110" rx="9" fill="#ffffff" stroke="#8e7cc3" stroke-width="2.2"/>
+<text x="740.5" y="768.8000000000001" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">Units</text>
+<text x="740.5" y="789.6" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">265 units, as reported</text>
+<text x="740.5" y="810.4000000000001" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">e.g. mmHg, kg/m2</text>
+<rect x="982" y="729" width="333" height="110" rx="9" fill="#ffffff" stroke="#8e7cc3" stroke-width="2.2"/>
+<text x="1148.5" y="768.8000000000001" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">Values &amp; Enums</text>
+<text x="1148.5" y="789.6" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">Answer value sets</text>
+<text x="1148.5" y="810.4000000000001" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">(categorical codes)</text>
+<text x="1338" y="668" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" fill="#8e7cc3" text-anchor="end">Add variables [+]</text>
+<line x1="1352" y1="663" x2="1408" y2="663" stroke="#8e7cc3" stroke-width="4" marker-end="url(#ap)"/>
+<rect x="130" y="985" width="1222" height="257" rx="14" fill="#e2f1ef" stroke="#3f8a83" stroke-width="3"/>
+<text x="173" y="1035" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" font-style="normal" fill="#1c2733" text-anchor="start">3. Semantic Layer</text>
+<text x="173" y="1070" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#5a6a7a" text-anchor="start">(External Ontologies &amp; Term Lookup Services)</text>
+<rect x="167" y="1096" width="333" height="110" rx="9" fill="#ffffff" stroke="#3f8a83" stroke-width="2.2"/>
+<text x="333.5" y="1146.1999999999998" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">Disease &amp; Phenotype</text>
+<text x="333.5" y="1166.9999999999998" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">(HPO, MONDO)</text>
+<rect x="574" y="1096" width="333" height="110" rx="9" fill="#ffffff" stroke="#3f8a83" stroke-width="2.2"/>
+<text x="740.5" y="1135.8" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">Clinical, Anatomy &amp;</text>
+<text x="740.5" y="1156.6" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">Answer Values</text>
+<text x="740.5" y="1177.3999999999999" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">(LOINC, UBERON, VALUESETS)</text>
+<rect x="982" y="1096" width="333" height="110" rx="9" fill="#ffffff" stroke="#3f8a83" stroke-width="2.2"/>
+<text x="1148.5" y="1146.1999999999998" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">Term Lookups</text>
+<text x="1148.5" y="1166.9999999999998" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2b3640" text-anchor="middle">(OLS, BioPortal)</text>
+<text x="1338" y="1035" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" font-style="normal" fill="#3f8a83" text-anchor="end">Ontology term filter</text>
+<line x1="1352" y1="1030" x2="1408" y2="1030" stroke="#3f8a83" stroke-width="4" marker-end="url(#at)"/>
+<line x1="407" y1="512" x2="407" y2="612" stroke="#7f8a8f" stroke-width="3" stroke-dasharray="9,7" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<line x1="407" y1="880" x2="407" y2="979" stroke="#7f8a8f" stroke-width="3" stroke-dasharray="9,7" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<line x1="741" y1="512" x2="741" y2="612" stroke="#7f8a8f" stroke-width="3" stroke-dasharray="9,7" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<line x1="741" y1="880" x2="741" y2="979" stroke="#7f8a8f" stroke-width="3" stroke-dasharray="9,7" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<line x1="1061" y1="512" x2="1061" y2="612" stroke="#7f8a8f" stroke-width="3" stroke-dasharray="9,7" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<line x1="1061" y1="880" x2="1061" y2="979" stroke="#7f8a8f" stroke-width="3" stroke-dasharray="9,7" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<rect x="1414" y="250" width="506" height="992" rx="18" fill="#fdf6e3" stroke="#f2ac3b" stroke-width="4"/>
+<text x="1667" y="318" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" font-style="normal" fill="#b8930a" text-anchor="middle">Cohort &amp; Export</text>
+<text x="1667" y="356" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" font-style="italic" fill="#7a6200" text-anchor="middle">(Browser Session Output)</text>
+<rect x="1451" y="398" width="432" height="147" rx="9" fill="#ffffff" stroke="#e8a83a" stroke-width="2.2"/>
+<text x="1481" y="443" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#b8930a" text-anchor="start">Session Basket</text>
+<text x="1481" y="480" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5a6a7a" text-anchor="start">Collect variables with [+] across</text>
+<text x="1481" y="502" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5a6a7a" text-anchor="start">search &amp; browse tabs</text>
+<rect x="1451" y="594" width="432" height="147" rx="9" fill="#ffffff" stroke="#e8a83a" stroke-width="2.2"/>
+<text x="1481" y="639" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#b8930a" text-anchor="start">Grouped Hierarchy</text>
+<text x="1481" y="676" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5a6a7a" text-anchor="start">Organized by Study → Dataset (pht)</text>
+<text x="1481" y="698" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5a6a7a" text-anchor="start">with variable ID, N and unit</text>
+<rect x="1451" y="790" width="432" height="147" rx="9" fill="#ffffff" stroke="#e8a83a" stroke-width="2.2"/>
+<text x="1481" y="835" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#b8930a" text-anchor="start">Sample Size Bounds</text>
+<text x="1481" y="872" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5a6a7a" text-anchor="start">Shows each variable&#x27;s N and an upper</text>
+<text x="1481" y="894" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5a6a7a" text-anchor="start">bound on cohort size (smallest N)</text>
+<rect x="1451" y="998" width="432" height="147" rx="9" fill="#ffffff" stroke="#e8a83a" stroke-width="2.2"/>
+<text x="1481" y="1043" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#b8930a" text-anchor="start">CSV Cohort Export</text>
+<text x="1481" y="1080" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5a6a7a" text-anchor="start">Download the selected variables</text>
+<text x="1481" y="1102" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5a6a7a" text-anchor="start">as a CSV file</text>
+<text x="1000" y="1308" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" font-style="italic" fill="#7f8a8f" text-anchor="middle">Note: The three layers organize the underlying data and metadata. Cohort selection and CSV export run in the user&#x27;s browser session.</text>
+</svg>
