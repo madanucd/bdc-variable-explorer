@@ -612,7 +612,7 @@ with T("About"):
    The schema mirrors dbGaP's study → dataset → variable structure (identical variables that
    share a name are merged into one slot that keeps all their `phv` ids), and LinkML can generate
    JSON Schema or Python data classes from it.
-2. **Two-level ontology mapping**, by automatic text matching against ontology exports from BioPortal:
+2. **Two-level ontology mapping**:
    - *Variable level* — variable names and descriptions matched to ontology terms.
    - *Value level* — categorical answers matched to terms of their own, e.g. an answer like
      `Never` matched to a VALUESETS term.
