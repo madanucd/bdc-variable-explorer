@@ -666,6 +666,5 @@ with T("About"):
     st.warning(
         "\U0001F6A7 **Disclaimer:** This is a proof-of-concept (POC) for exploring BioData Catalyst "
         "variables, their datasets, values and ontology mappings. Data comes from publicly available "
-        "dbGaP variable reports. Ontology mappings are automatic text matches and may be wrong. "
-        "**N** is dbGaP's record count for each variable, not a participant-level cohort count."
+        "dbGaP variable reports. **N** is dbGaP's record count for each variable, not a participant-level cohort count."
     )
